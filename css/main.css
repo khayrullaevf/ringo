@@ -60,13 +60,11 @@
   -moz-column-gap: 15px;
        column-gap: 15px;
 }
-.navbar__socials-icon {
+.navbar__socials-link__icon {
   color: #AE7B3C;
-  width: 24px;
-  height: 24px;
   font-size: 20px;
 }
-.navbar__socials-icon:hover {
+.navbar__socials-link__icon:hover {
   color: #282b22;
 }
 .navbar__phone {

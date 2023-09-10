@@ -36,14 +36,14 @@
   &__socials {
     display: flex;
     column-gap: 15px;
-    &-icon {
-      color: $primary-btn-bg;
-      width: 24px;
-      height: 24px;
-      font-size: 20px;
-    }
-    &-icon:hover {
-      color: $text-color;
+    &-link {
+      &__icon {
+        color: $primary-btn-bg;
+    font-size: 20px;
+      }
+      &__icon:hover {
+        color: $text-color;
+      }
     }
   }
   &__phone {

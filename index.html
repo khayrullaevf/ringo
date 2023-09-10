@@ -38,15 +38,8 @@
               alt="navbar-logo"
               class="navbar__logo"
             />
-            <input type="checkbox" id="navbar_check" class="navbar__checkbox" />
+            <input type="checkbox" class="navbar__checkbox" id="navbar_check">
             <ul class="navbar__menu">
-              <label for="navbar_check" class="navbar__menu-remove">
-                <img
-                  src="./imgs/icons/navbar__remove.svg"
-                  alt="remove"
-                  class="navbar__remove"
-                />
-              </label>
               <li class="navbar__menu-item">
                 <a href="#" class="navbar__menu-item__link">Напрямки</a>
               </li>
@@ -62,10 +55,10 @@
             </ul>
             <div class="navbar__socials">
               <a href="#" class="navbar__socials-link" target="_blank"
-                ><i class="fa-brands fa-instagram navbar__socials-icon"></i
+                ><i class="fa-brands fa-instagram navbar__socials-link__icon"></i
               ></a>
               <a href="#" class="navbar__socials-link" target="_blank">
-                <i class="fa-brands fa-facebook-f navbar__socials-icon"></i
+                <i class="fa-brands fa-facebook-f navbar__socials-link__icon"></i
               ></a>
             </div>
             <div class="navbar__phone">
@@ -85,6 +78,13 @@
                 src="./imgs/icons/burger-menu.svg"
                 alt="burger"
                 class="navbar__burger"
+              />
+            </label>
+             <label for="navbar_check" class="navbar__remove">
+              <img
+                src="./imgs/icons/navbar__remove.svg"
+                alt="remove"
+                class="navbar__remove-img"
               />
             </label>
           </div>

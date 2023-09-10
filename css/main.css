@@ -397,11 +397,10 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 3s all;
     position: fixed;
     top: 80%;
     z-index: 5000;
-    right: 23%;
+    right: 15%;
     visibility: visible;
   }
   .navbar__remove {

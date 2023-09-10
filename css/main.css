@@ -34,10 +34,16 @@
   width: 122px;
   height: 53px;
 }
+.navbar__checkbox {
+  display: none;
+}
 .navbar__menu {
   display: flex;
   -moz-column-gap: 40px;
        column-gap: 40px;
+}
+.navbar__menu-remove {
+  display: none;
 }
 .navbar__menu-item__link {
   color: #282b22;
@@ -61,6 +67,7 @@
   color: #AE7B3C;
   width: 24px;
   height: 24px;
+  font-size: 20px;
 }
 .navbar__socials-icon:hover {
   color: #282b22;
@@ -90,7 +97,7 @@
   outline: none;
   text-decoration: none;
 }
-.navbar__burger {
+.navbar__open {
   display: none;
 }
 
@@ -100,21 +107,33 @@
     margin: 0 auto;
     padding: 0 20px;
   }
-  .navbar {
-    display: flex;
-    height: 93px;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-  }
   .navbar__logo {
     width: 122px;
     height: 53px;
+    z-index: 2000;
   }
   .navbar__menu {
-    display: flex;
     -moz-column-gap: 30px;
          column-gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    transform: translateX(120%);
+    position: fixed;
+    width: 50%;
+    top: 0;
+    right: 0;
+    background: #fff;
+    z-index: 2;
+    row-gap: 32px;
+    height: 100vh;
+  }
+  .navbar__menu-remove {
+    position: fixed;
+    top: 36px;
+    right: 36px;
+    display: block;
   }
   .navbar__menu-item__link {
     font-family: "Raleway-5";
@@ -124,20 +143,30 @@
     font-weight: 500;
     line-height: 100%;
   }
+  .navbar__checkbox:checked + .navbar__menu {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  .navbar__open {
+    display: block;
+  }
   .navbar__socials {
     margin-right: 5px;
     display: flex;
     -moz-column-gap: 15px;
          column-gap: 15px;
+    z-index: 2000;
   }
   .navbar__socials-icon {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
+    font-size: 20px;
   }
   .navbar__phone {
     display: flex;
     display: flex;
     align-items: center;
+    z-index: 2000;
   }
   .navbar__phone-icon__link {
     width: 22px;
@@ -161,19 +190,33 @@
     margin: 0 auto;
     padding: 0 20px;
   }
-  .navbar {
-    display: flex;
-    align-self: center;
-    justify-content: space-between;
-    width: 93px;
-    width: 100%;
-  }
   .navbar__logo {
     width: 122px;
     height: 53px;
   }
   .navbar__menu {
-    display: none;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    transform: translateX(120%);
+    position: fixed;
+    width: 50%;
+    top: 0;
+    right: 0;
+    background: red;
+    z-index: 2;
+    row-gap: 32px;
+    height: 100vh;
+  }
+  .navbar__menu-remove {
+    display: block;
+  }
+  .navbar__checkbox:checked + .navbar__menu {
+    transform: translateX(0);
+    visibility: visible;
   }
   .navbar__socials {
     display: flex;
@@ -181,15 +224,16 @@
          column-gap: 15px;
   }
   .navbar__socials-icon {
-    width: 24px;
-    height: 24px;
+    font-size: 15px;
+    width: 15px;
+    height: 15px;
   }
-  .navbar__phone {
+  .navbar__socials__phone {
     display: flex;
     -moz-column-gap: 7px;
          column-gap: 7px;
   }
-  .navbar__phone-link {
+  .navbar__socials__phone-link {
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -197,9 +241,41 @@
     text-transform: uppercase;
     margin-right: 7px;
   }
-  .navbar__burger {
+  .navbar__socials__burger {
     display: block;
     width: 34px;
     height: 34px;
+  }
+}
+@media (max-width: 576px) {
+  .navbar__logo {
+    z-index: 3200;
+  }
+  .navbar__menu {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    transform: translateX(120%);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background: #fff;
+    z-index: 2;
+    row-gap: 32px;
+    height: 100vh;
+  }
+  .navbar__socials {
+    display: none;
+  }
+  .navbar__phone {
+    display: none;
+  }
+  .navbar__checkbox:checked + .navbar__menu {
+    transform: translateX(0);
+    visibility: visible;
   }
 }/*# sourceMappingURL=main.css.map */

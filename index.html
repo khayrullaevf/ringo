@@ -33,39 +33,64 @@
       <nav>
         <div class="container">
           <div class="navbar">
-            <img src="./imgs/navbar-logo.svg" alt="navbar-logo" class="navbar__logo">
+            <img
+              src="./imgs/navbar-logo.svg"
+              alt="navbar-logo"
+              class="navbar__logo"
+            />
+            <input type="checkbox" id="navbar_check" class="navbar__checkbox" />
             <ul class="navbar__menu">
-              <li class="navbar__menu-item"><a href="#" class="navbar__menu-item__link">Напрямки</a></li>
-              <li class="navbar__menu-item"><a href="#" class="navbar__menu-item__link">Про компанію</a></li>
-              <li class="navbar__menu-item"><a href="#" class="navbar__menu-item__link">Переваги</a></li>
-              <li class="navbar__menu-item"><a href="#" class="navbar__menu-item__link">Етапи роботи</a></li>
-
+              <label for="navbar_check" class="navbar__menu-remove">
+                <img
+                  src="./imgs/icons/navbar__remove.svg"
+                  alt="remove"
+                  class="navbar__remove"
+                />
+              </label>
+              <li class="navbar__menu-item">
+                <a href="#" class="navbar__menu-item__link">Напрямки</a>
+              </li>
+              <li class="navbar__menu-item">
+                <a href="#" class="navbar__menu-item__link">Про компанію</a>
+              </li>
+              <li class="navbar__menu-item">
+                <a href="#" class="navbar__menu-item__link">Переваги</a>
+              </li>
+              <li class="navbar__menu-item">
+                <a href="#" class="navbar__menu-item__link">Етапи роботи</a>
+              </li>
             </ul>
             <div class="navbar__socials">
-             <a href="#" class="navbar__socials-link" target="_blank"><i class="fa-brands fa-instagram navbar__socials-icon"></i></a>  
-             <a href="#" class="navbar__socials-link" target="_blank"> <i class="fa-brands fa-facebook-f navbar__socials-icon"></i></a>  
-             
-
+              <a href="#" class="navbar__socials-link" target="_blank"
+                ><i class="fa-brands fa-instagram navbar__socials-icon"></i
+              ></a>
+              <a href="#" class="navbar__socials-link" target="_blank">
+                <i class="fa-brands fa-facebook-f navbar__socials-icon"></i
+              ></a>
             </div>
             <div class="navbar__phone">
               <a href="tel:+380 67661 5415" class="navbar__phone-icon__link">
-              <img src="./imgs/phone.svg" alt="phone" class="navbar__phone-icon__link-img">
+                <img
+                  src="./imgs/phone.svg"
+                  alt="phone"
+                  class="navbar__phone-icon__link-img"
+                />
               </a>
-              <a href="tel:+380 67661 5415" class="navbar__phone-link">+380 67661 5415</a>
-
-
-
+              <a href="tel:+380 67661 5415" class="navbar__phone-link"
+                >+380 67661 5415</a
+              >
             </div>
-            <img src="./imgs/icons/burger-menu.svg" alt="burger" class="navbar__burger">
-
-
+            <label for="navbar_check" class="navbar__open">
+              <img
+                src="./imgs/icons/burger-menu.svg"
+                alt="burger"
+                class="navbar__burger"
+              />
+            </label>
           </div>
         </div>
       </nav>
-      <div class="hero">
-      </div>
-
-
+      <div class="hero"></div>
     </header>
 
     <script src="./font-awesome/fontawesome-free-6.4.2-web/js/all.min.js"></script>

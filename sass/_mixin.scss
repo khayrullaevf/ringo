@@ -10,3 +10,8 @@
         @content;
     }
 }
+@mixin for-medium-mobile{
+    @media(max-width:576px){
+        @content;
+    }
+}

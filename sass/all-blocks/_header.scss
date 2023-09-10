@@ -9,9 +9,16 @@
     width: 122px;
     height: 53px;
   }
+  &__checkbox {
+    display: none;
+  }
   &__menu {
     display: flex;
     column-gap: 40px;
+    &-remove {
+      display: none;
+    }
+
     &-item {
       &__link {
         color: $text-color;
@@ -35,6 +42,7 @@
       color: $primary-btn-bg;
       width: 24px;
       height: 24px;
+      font-size: 20px;
     }
     &-icon:hover {
       color: $text-color;
@@ -65,7 +73,8 @@
       text-decoration: none;
     }
   }
-  &__burger {
+
+  &__open {
     display: none;
   }
 }
@@ -77,18 +86,33 @@
     padding: 0 20px;
   }
   .navbar {
-    display: flex;
-    height: 93px;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
     &__logo {
       width: 122px;
       height: 53px;
+      z-index: 2000;
     }
     &__menu {
-      display: flex;
       column-gap: 30px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+      transform: translateX(120%);
+      position: fixed;
+      width: 50%;
+      top: 0;
+      right: 0;
+      background: #fff;
+      z-index: 2;
+      row-gap: 32px;
+      height: 100vh;
+      &-remove {
+        position: fixed;
+        top: 36px;
+        right: 36px;
+        display: block;
+      }
+
       &-item {
         &__link {
           font-family: $font-raleway-5;
@@ -100,19 +124,34 @@
         }
       }
     }
+
+    &__checkbox:checked + &__menu {
+      transform: translateX(0);
+      visibility: visible;
+    }
+
+    &__open {
+      display: block;
+    }
+
     &__socials {
       margin-right: 5px;
       display: flex;
       column-gap: 15px;
+      z-index: 2000;
+
       &-icon {
-        width: 20px;
-        height: 20px;
+        width: 24px;
+        height: 24px;
+        font-size: 20px;
       }
     }
     &__phone {
       display: flex;
       display: flex;
       align-items: center;
+      z-index: 2000;
+
       &-icon__link {
         width: 22px;
         height: 22px;
@@ -138,43 +177,91 @@
     padding: 0 20px;
   }
   .navbar {
-    display: flex;
-    align-self: center;
-    justify-content: space-between;
-    width: 93px;
-    width: 100%;
     &__logo {
       width: 122px;
       height: 53px;
     }
     &__menu {
-      display: none;
+      column-gap: 30px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+      transform: translateX(120%);
+      position: fixed;
+      width: 50%;
+      top: 0;
+      right: 0;
+      background: red;
+      z-index: 2;
+      row-gap: 32px;
+      height: 100vh;
+      &-remove {
+        display: block;
+      }
+    }
+    &__checkbox:checked + &__menu {
+      transform: translateX(0);
+      visibility: visible;
     }
     &__socials {
-     display: flex;
-     column-gap: 15px;
-     &-icon{
+      display: flex;
+      column-gap: 15px;
+      &-icon {
         font-size: 15px;
         width: 15px;
         height: 15px;
-
-    }
-    &__phone {
-      display: flex;
-      column-gap: 7px;
-      &-link {
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 100%;
-        text-transform: uppercase;
-        margin-right: 7px;
+      }
+      &__phone {
+        display: flex;
+        column-gap: 7px;
+        &-link {
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 100%;
+          text-transform: uppercase;
+          margin-right: 7px;
+        }
+      }
+      &__burger {
+        display: block;
+        width: 34px;
+        height: 34px;
       }
     }
-    &__burger {
-      display: block;
-      width: 34px;
-      height: 34px;
+  }
+}
+@include for-medium-mobile {
+  .navbar {
+    &__logo {
+      z-index: 3200;
+    }
+    &__menu {
+      column-gap: 30px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+      transform: translateX(120%);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      right: 0;
+      background: #fff;
+      z-index: 2;
+      row-gap: 32px;
+      height: 100vh;
+    }
+    &__socials {
+      display: none;
+    }
+    &__phone {
+      display: none;
+    }
+    &__checkbox:checked + &__menu {
+      transform: translateX(0);
+      visibility: visible;
     }
   }
 }

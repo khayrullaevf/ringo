@@ -128,11 +128,12 @@
     z-index: 2;
     row-gap: 32px;
     height: 100vh;
+    transition: 0.4s linear;
   }
   .navbar__menu-remove {
     position: fixed;
     top: 36px;
-    right: 36px;
+    right: 20px;
     display: block;
   }
   .navbar__menu-item__link {
@@ -206,10 +207,11 @@
     width: 50%;
     top: 0;
     right: 0;
-    background: red;
+    background: #fff;
     z-index: 2;
     row-gap: 32px;
     height: 100vh;
+    transition: 0.4s linear;
   }
   .navbar__menu-remove {
     display: block;

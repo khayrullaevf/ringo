@@ -1,0 +1,110 @@
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 0px;
+  border-bottom: 1px solid $line-color;
+  margin-bottom: 140px;
+
+  &__img {
+    width: 160px;
+    height: 200px;
+  }
+
+  &__img-2 {
+    position: relative;
+    top: 180px;
+  }
+  &__content {
+    padding-top: 40px;
+
+    &-text {
+      color: $text-color;
+      text-align: center;
+      font-family: $font-raleway-6;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%;
+      padding-bottom: 80px;
+      //   max-width: 814px;
+      //   width: 100%;
+      //   height: 141px;
+    }
+    &-cards {
+      display: flex;
+      border-top: 1px solid $line-color;
+
+      &__card {
+        display: flex;
+        max-width: 463px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        column-gap: 15px;
+        &-icon {
+          color: $primary-btn-bg;
+          font-size: 18px;
+        }
+        &-text {
+          color: $text-color;
+          font-family: $font-raleway-5;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 150%;
+          max-width: 370px;
+        }
+      }
+      &__card-1 {
+        border-right: 1px solid $line-color;
+        padding-right: 60px;
+      }
+      &__card-2 {
+        padding-left: 60px;
+      }
+    }
+  }
+}
+
+@include for-tablet {
+  .info {
+    &__img {
+      display: none;
+    }
+  }
+}
+
+@include for-mobile {
+}
+
+@include for-medium-mobile {
+  .info {
+    &__content {
+      display: flex;
+      flex-direction: column;
+      &-text {
+        text-align: center;
+        font-family: $font-raleway-6;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 130%;
+      }
+      &-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        width: 100%;
+        &__card {
+          border: none;
+          padding: 36px 0;
+          max-width: 566px;
+          width: 100%;
+        }
+        &__card-1 {
+          border-bottom: 1px solid $line-color;
+        }
+      }
+    }
+  }
+}

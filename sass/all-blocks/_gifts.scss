@@ -71,7 +71,7 @@
   }
 }
 
-@include for-mobile {
+@include for-tablet{
   .gifts {
     display: flex;
     justify-content: center;
@@ -101,3 +101,4 @@
     }
   }
 }
+

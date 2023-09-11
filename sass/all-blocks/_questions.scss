@@ -1,0 +1,208 @@
+.questions {
+  width: 100%;
+  display: flex;
+  margin-bottom: 140px;
+  max-height: 696px;
+  &__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-section-bg;
+    padding-top: 100px;
+    padding-left: 120px;
+    padding-right: 187px;
+    padding-bottom: 100px;
+    &-title {
+      color: $primary-white;
+      max-width: 413px;
+      font-family: $font-raleway-6;
+      font-size: 46px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 125%;
+      text-transform: uppercase;
+    }
+    &-subtitle {
+      color: $primary-white;
+      font-family: $font-raleway-5;
+      margin-top: 20px;
+      margin-bottom: 15px;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 145%;
+      max-width: 306px;
+    }
+    &-form {
+      display: flex;
+      flex-direction: column;
+      &__input {
+        max-width: 300px;
+        padding-top: 25px;
+        padding-bottom: 10px;
+        border: 1px solid $primary-section-bg;
+        background-color: $primary-section-bg;
+        border-bottom: 1px solid $line-color;
+        outline: none;
+        text-decoration: none;
+      }
+      &__input::placeholder {
+        color: $line-color;
+        font-family: $font-raleway-5;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 145%;
+      }
+      &__send {
+        margin-top: 35px;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        &-icon {
+          color: $line-color;
+          font-size: 18px;
+        }
+        h2 {
+          color: $line-color;
+          font-family: $font-raleway-5;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 100%; /* 14px */
+        }
+      }
+      &__btn {
+        display: flex;
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+        color: $primary-white;
+        font-family: $font-raleway-7;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        border: none;
+        border-radius: 5px;
+        padding: 22px 56px;
+        background-color: $primary-btn-bg;
+        margin-bottom: 25px;
+      }
+      &__end {
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+        &-icon {
+          color: $primary-white;
+          padding: 3px;
+          font-size: 6px;
+          border: 2px solid $primary-white;
+        }
+        h2 {
+          color: $primary-white;
+          font-family: $font-raleway-5;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 130%; /* 15.6px */
+        }
+      }
+    }
+  }
+  &__bg {
+    width: 50%;
+    min-height: 696px;
+    background-size: cover;
+    img {
+      min-height: 696px;
+    }
+  }
+}
+
+@include for-tablet {
+  .questions {
+    display: flex;
+    width: 100%;
+    min-height: 696px;
+    &__content {
+      width: 60%;
+    }
+    &__bg {
+      width: 40%;
+    }
+  }
+}
+
+@include for-mobile {
+  .questions {
+    &__content {
+      padding-left: 20px;
+      padding-top: 100px;
+      padding-right: 34px;
+
+      &-title {
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%;
+        text-transform: uppercase;
+        max-width: 266px;
+      }
+      &-subtitle {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 145%;
+        max-width: 266px;
+      }
+      &-form {
+        &__input {
+          max-width: 266px;
+        }
+        &__btn {
+          max-width: 266px;
+        }
+        &__end {
+          max-width: 266px;
+        }
+      }
+    }
+  }
+}
+@include for-medium-mobile {
+  .questions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &__content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      &-title {
+        max-width: 576px;
+        width: 100%;
+      }
+      &-subtitle {
+        max-width: 576px;
+        width: 100%;
+      }
+      &-form {
+        &__input {
+          max-width: 576px;
+          width: 100%;
+          padding-top: 25px;
+          padding-bottom: 10px;
+        }
+        &__btn {
+          max-width: 576px;
+          width: 100%;
+        }
+      }
+    }
+    &__bg {
+      width: 100%;
+    }
+  }
+}

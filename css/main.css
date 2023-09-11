@@ -1011,4 +1011,214 @@ nav {
     font-weight: 400;
     line-height: 135%;
   }
+}
+.questions {
+  width: 100%;
+  display: flex;
+  margin-bottom: 140px;
+  max-height: 696px;
+}
+.questions__content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: #3D4A39;
+  padding-top: 100px;
+  padding-left: 120px;
+  padding-right: 187px;
+  padding-bottom: 100px;
+}
+.questions__content-title {
+  color: white;
+  max-width: 413px;
+  font-family: "Raleway-6";
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  text-transform: uppercase;
+}
+.questions__content-subtitle {
+  color: white;
+  font-family: "Raleway-5";
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145%;
+  max-width: 306px;
+}
+.questions__content-form {
+  display: flex;
+  flex-direction: column;
+}
+.questions__content-form__input {
+  max-width: 300px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  border: 1px solid #3D4A39;
+  background-color: #3D4A39;
+  border-bottom: 1px solid #D4D5D3;
+  outline: none;
+  text-decoration: none;
+}
+.questions__content-form__input::-moz-placeholder {
+  color: #D4D5D3;
+  font-family: "Raleway-5";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145%;
+}
+.questions__content-form__input::placeholder {
+  color: #D4D5D3;
+  font-family: "Raleway-5";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145%;
+}
+.questions__content-form__send {
+  margin-top: 35px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.questions__content-form__send-icon {
+  color: #D4D5D3;
+  font-size: 18px;
+}
+.questions__content-form__send h2 {
+  color: #D4D5D3;
+  font-family: "Raleway-5";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 14px */
+}
+.questions__content-form__btn {
+  display: flex;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Raleway-7";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 22px 56px;
+  background-color: #AE7B3C;
+  margin-bottom: 25px;
+}
+.questions__content-form__end {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  align-items: center;
+}
+.questions__content-form__end-icon {
+  color: white;
+  padding: 3px;
+  font-size: 6px;
+  border: 2px solid white;
+}
+.questions__content-form__end h2 {
+  color: white;
+  font-family: "Raleway-5";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 15.6px */
+}
+.questions__bg {
+  width: 50%;
+  min-height: 696px;
+  background-size: cover;
+}
+.questions__bg img {
+  min-height: 696px;
+}
+
+@media (max-width: 992px) {
+  .questions {
+    display: flex;
+    width: 100%;
+    min-height: 696px;
+  }
+  .questions__content {
+    width: 60%;
+  }
+  .questions__bg {
+    width: 40%;
+  }
+}
+@media (max-width: 768px) {
+  .questions__content {
+    padding-left: 20px;
+    padding-top: 100px;
+    padding-right: 34px;
+  }
+  .questions__content-title {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    text-transform: uppercase;
+    max-width: 266px;
+  }
+  .questions__content-subtitle {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 145%;
+    max-width: 266px;
+  }
+  .questions__content-form__input {
+    max-width: 266px;
+  }
+  .questions__content-form__btn {
+    max-width: 266px;
+  }
+  .questions__content-form__end {
+    max-width: 266px;
+  }
+}
+@media (max-width: 576px) {
+  .questions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .questions__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .questions__content-title {
+    max-width: 576px;
+    width: 100%;
+  }
+  .questions__content-subtitle {
+    max-width: 576px;
+    width: 100%;
+  }
+  .questions__content-form__input {
+    max-width: 576px;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
+  .questions__content-form__btn {
+    max-width: 576px;
+    width: 100%;
+  }
+  .questions__bg {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

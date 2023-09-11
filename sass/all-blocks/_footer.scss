@@ -1,0 +1,129 @@
+.footer {
+  padding-bottom: 100px;
+  border-bottom: 1px solid $line-color;
+}
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+
+  &-logos {
+    display: flex;
+    flex-direction: column;
+    row-gap: 26px;
+    &__socials {
+      display: flex;
+      align-items: center;
+      column-gap: 11px;
+      h2 {
+        color: $text-color-2;
+        font-family: $font-raleway-5;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%;
+      }
+      a {
+        color: $primary-btn-bg;
+        font-size: 20px;
+      }
+    }
+  }
+  &-menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    &__item {
+      a {
+        color: $text-color;
+        font-family: $font-raleway-5;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%;
+        outline: none;
+        text-decoration: none;
+      }
+      a:hover {
+        color: $primary-btn-bg;
+      }
+    }
+  }
+  &-phone {
+    display: flex;
+    flex-direction: column;
+    row-gap: 31px;
+    &-box {
+      display: flex;
+      align-items: center;
+      column-gap: 7px;
+      a {
+        color: $text-color-2;
+        font-family: $font-lato-7;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        text-transform: uppercase;
+        outline: none;
+        text-decoration: none;
+      }
+    }
+    &-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $primary-white;
+      font-family: $font-raleway-7;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%;
+      width: 280px;
+      height: 60px;
+      background-color: $primary-btn-bg;
+      border: none;
+      border-radius: 5px;
+    }
+  }
+}
+
+@include for-mobile {
+  .footer__nav {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 60px;
+    &-phone {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}
+@include for-medium-mobile{
+  .footer__nav {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 60px;
+    &-logos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &-phone{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      a{
+        width: 100%;
+      }
+      &__btn{
+        width: 100%;
+      }
+    }
+  }
+}

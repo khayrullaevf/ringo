@@ -839,6 +839,11 @@ nav {
     display: none;
   }
 }
+@media (max-width: 768px) {
+  .info {
+    margin-bottom: 100px;
+  }
+}
 @media (max-width: 576px) {
   .info__content {
     display: flex;
@@ -866,5 +871,144 @@ nav {
   }
   .info__content-cards__card-1 {
     border-bottom: 1px solid #D4D5D3;
+  }
+}
+.advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 140px;
+}
+.advantages__title {
+  color: #282b22;
+  text-align: center;
+  font-family: "Raleway-6";
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  text-transform: uppercase;
+  padding-bottom: 80px;
+}
+.advantages__cards {
+  width: 100%;
+  border-bottom: 1px solid #D4D5D3;
+  border-top: 1px solid #D4D5D3;
+  display: flex;
+  flex-direction: column;
+}
+.advantages__cards-card {
+  border-bottom: 1px solid #D4D5D3;
+  width: 100%;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.advantages__cards-card__number {
+  font-family: "Raleway-6";
+  color: #D4D5D3;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+.advantages__cards-card__content {
+  width: 50%;
+  border-left: 1px solid #D4D5D3;
+  padding-left: 40px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.advantages__cards-card__content h2 {
+  color: #282b22;
+  font-family: "Raleway-6";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+}
+.advantages__cards-card__content h3 {
+  color: #515458;
+  font-family: "Raleway-5";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+}
+
+@media (max-width: 768px) {
+  .advantages__title {
+    color: #282b22;
+    text-align: center;
+    font-family: "Raleway-6";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    text-transform: uppercase;
+    padding-bottom: 65px;
+  }
+  .advantages__cards-card__content h2 {
+    color: #282b22;
+    font-family: "Raleway-6";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  .advantages__cards-card__content h3 {
+    color: #515458;
+    font-family: "Raleway-5";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%;
+    max-width: 255px;
+  }
+}
+@media (max-width: 576px) {
+  .advantages {
+    display: flex;
+    flex-direction: column;
+  }
+  .advantages__title {
+    text-align: center;
+    font-family: "Raleway-6";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 135%;
+    text-transform: uppercase;
+  }
+  .advantages__cards {
+    display: flex;
+  }
+  .advantages__cards-card {
+    display: flex;
+    justify-content: flex-start;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+  }
+  .advantages__cards-card__content {
+    border: none;
+    padding-left: 0;
+  }
+  .advantages__cards-card__content h2 {
+    color: #282b22;
+    font-family: "Raleway-6";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  .advantages__cards-card__content h3 {
+    max-width: 263px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%;
   }
 }/*# sourceMappingURL=main.css.map */

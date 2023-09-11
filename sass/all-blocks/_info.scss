@@ -75,6 +75,9 @@
 }
 
 @include for-mobile {
+    .info{
+        margin-bottom: 100px;
+    }
 }
 
 @include for-medium-mobile {

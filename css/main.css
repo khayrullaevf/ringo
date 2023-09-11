@@ -1661,6 +1661,45 @@ nav {
   border-radius: 5px;
 }
 
+.brands {
+  padding-top: 40px;
+  padding-bottom: 38px;
+  width: 100%;
+  border-bottom: 1px solid #D4D5D3;
+  display: flex;
+  flex-direction: column;
+  row-gap: 38px;
+}
+.brands__title {
+  color: #282b22;
+  font-family: "Raleway-6";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+.brands__logos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__end {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+.footer__end h2 {
+  color: #D4D5D3;
+  font-family: "Raleway-5";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+}
+
 @media (max-width: 768px) {
   .footer__nav {
     display: flex;

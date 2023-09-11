@@ -105,6 +105,8 @@
   &__logos {
     display: flex;
     justify-content: space-between;
+    row-gap: 3px;
+    column-gap: 3px;
     flex-wrap: wrap;
   }
 }

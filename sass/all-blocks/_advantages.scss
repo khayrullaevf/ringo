@@ -27,13 +27,21 @@
       display: flex;
       justify-content: space-between;
       cursor: pointer;
-      &__number {
+      &__number{
         font-family: $font-raleway-6;
         color: $line-color;
         font-size: 24px;
         font-style: normal;
         font-weight: 600;
         line-height: 100%;
+      }
+      &__girl{
+        width: 340px;
+        height: 240px;
+        position: relative;
+        top: 0%;
+        left: 5%;
+        z-index: 5000;
       }
 
       &__content {
@@ -80,6 +88,9 @@
     }
     &__cards {
       &-card {
+      &__girl{
+        display: none;
+      }
         &__content {
           h2 {
             color: $text-color;
@@ -124,6 +135,9 @@
         display: flex;
         justify-content: flex-start;
         column-gap: 15px;
+          &__girl{
+        display: none;
+      }
         &__content {
           border: none;
           padding-left: 0;

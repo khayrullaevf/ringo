@@ -913,6 +913,14 @@ nav {
   font-weight: 600;
   line-height: 100%;
 }
+.advantages__cards-card__girl {
+  width: 340px;
+  height: 240px;
+  position: relative;
+  top: 0%;
+  left: 5%;
+  z-index: 5000;
+}
 .advantages__cards-card__content {
   width: 50%;
   border-left: 1px solid #D4D5D3;
@@ -950,6 +958,9 @@ nav {
     line-height: 125%;
     text-transform: uppercase;
     padding-bottom: 65px;
+  }
+  .advantages__cards-card__girl {
+    display: none;
   }
   .advantages__cards-card__content h2 {
     color: #282b22;
@@ -991,6 +1002,9 @@ nav {
     justify-content: flex-start;
     -moz-column-gap: 15px;
          column-gap: 15px;
+  }
+  .advantages__cards-card__girl {
+    display: none;
   }
   .advantages__cards-card__content {
     border: none;

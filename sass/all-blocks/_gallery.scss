@@ -8,7 +8,7 @@
     column-gap: 40px;
     align-items: center;
   }
-  &__title {
+  &__title{
     color: $text-color;
     font-family: $font-raleway-6;
     font-size: 46px;
@@ -58,14 +58,13 @@
 @include for-medium-mobile {
   .gallery {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 
     &__title {
       font-size: 24px;
       font-style: normal;
       font-weight: 600;
       line-height: 135%;
-      padding-left: 30%;
     }
     &__cards {
       &-card-1 {
@@ -76,7 +75,9 @@
       }
     }
     &__footer {
-      padding-left: 15px;
+       display: flex;
+       align-self: flex-start;
+       padding-left: 5%;
     }
   }
 }

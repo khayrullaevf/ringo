@@ -1376,14 +1376,13 @@ nav {
 @media (max-width: 576px) {
   .gallery {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
   }
   .gallery__title {
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: 135%;
-    padding-left: 30%;
   }
   .gallery__cards-card-1 {
     display: none;
@@ -1392,7 +1391,9 @@ nav {
     display: none;
   }
   .gallery__footer {
-    padding-left: 15px;
+    display: flex;
+    align-self: flex-start;
+    padding-left: 5%;
   }
 }
 .gifts {

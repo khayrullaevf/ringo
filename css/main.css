@@ -1348,6 +1348,9 @@ nav {
   flex-direction: column;
   row-gap: 10px;
 }
+.gallery__footer-slider {
+  display: none;
+}
 .gallery__footer h2 {
   color: #282b22;
   font-family: "Raleway-6";
@@ -1364,6 +1367,9 @@ nav {
   font-weight: 600;
   line-height: 100%;
 }
+.gallery__slider {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .gallery__cards-card-1 {
@@ -1371,6 +1377,12 @@ nav {
   }
   .gallery__cards-card-3 {
     display: none;
+  }
+  .gallery__footer-slider {
+    display: block;
+    margin-top: 5px;
+    width: 72px;
+    height: 8px;
   }
 }
 @media (max-width: 576px) {
@@ -1394,6 +1406,12 @@ nav {
     display: flex;
     align-self: flex-start;
     padding-left: 5%;
+  }
+  .gallery__footer-slider {
+    display: block;
+    margin-top: 5px;
+    width: 72px;
+    height: 8px;
   }
 }
 .gifts {

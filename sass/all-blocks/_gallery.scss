@@ -8,7 +8,7 @@
     column-gap: 40px;
     align-items: center;
   }
-  &__title{
+  &__title {
     color: $text-color;
     font-family: $font-raleway-6;
     font-size: 46px;
@@ -24,6 +24,9 @@
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+    &-slider{
+      display: none;
+    }
     h2 {
       color: $text-color;
       font-family: $font-raleway-6;
@@ -41,6 +44,9 @@
       line-height: 100%;
     }
   }
+  &__slider {
+    display: none;
+  }
 }
 
 @include for-mobile {
@@ -51,6 +57,14 @@
       }
       &-card-3 {
         display: none;
+      }
+    }
+    &__footer {
+      &-slider {
+        display: block;
+        margin-top: 5px;
+        width: 72px;
+        height: 8px;
       }
     }
   }
@@ -75,9 +89,15 @@
       }
     }
     &__footer {
-       display: flex;
-       align-self: flex-start;
-       padding-left: 5%;
+      display: flex;
+      align-self: flex-start;
+      padding-left: 5%;
+      &-slider {
+        display: block;
+        margin-top: 5px;
+        width: 72px;
+        height: 8px;
+      }
     }
   }
 }
